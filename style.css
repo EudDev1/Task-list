@@ -1,0 +1,127 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,9,219,0.9923319669664741) 54%, rgba(0,212,255,1) 100%);
+}
+
+#botao-adicionar{
+background: rgb(163, 94, 231);
+border-radius: 5px ;
+height: 40px;
+border: none;
+padding: 0 15px;
+font-size: 17px;
+color: #ffffff;
+cursor: pointer;
+font-weight: bold;
+margin-top: 15px;
+float: right;
+}
+
+#botao-adicionar:hover{
+opacity: 0.8;
+}
+
+#botao-adicionar:active{
+    opacity: 0.6;
+}
+
+.container{
+background: #ffffff;
+width: 541px;
+margin-bottom: 100px;
+margin-top: 100px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+padding:30px 20px ;
+}
+
+#input-principal{
+width: 342px;
+height: 40px;
+border: solid 2px (209,211,212,0.4 );
+border-radius: 5px;
+margin-top: 15px; 
+padding-left: 10px ;
+}
+
+.botao-foguete{
+background: transparent;
+border:none;
+height: 100%;
+width: 40px;
+left: 0;
+top: 0;
+cursor: pointer;
+position: absolute;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+
+}
+
+.fa-rocket{
+    color: rgb(126, 0, 151);
+
+}
+
+.botao-delete{
+background: transparent;
+border:none;
+height: 100%;
+width: 40px;
+right: 0;
+top: 0;
+cursor: pointer;
+position: absolute;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+
+}
+
+.fa-trash{
+    color: red;
+}
+
+#tarefas{
+width: 100%;
+list-style: none;
+margin-top: 30px;
+
+}
+
+.nome-tarefa{
+    color: black;
+    font-size: 17px;
+   
+    
+}
+
+.iten-tarefa{
+background: #f2f2f2f2;
+box-shadow: 1px 4px 10px (0,0,0,0.2);
+border-radius: 5px;
+padding: 20PX 40PX;
+cursor: pointer;
+position: relative;
+margin-top: 30px;
+}
+
+.iten-tarefa:hover .botao-foguete{
+    opacity: 1;
+}
+
+.iten-tarefa:hover .botao-delete{
+    opacity: 1;
+}
+
+.concluido{
+    background-color: rgb(71, 224, 71);
+    text-decoration:line-through ;
+}
